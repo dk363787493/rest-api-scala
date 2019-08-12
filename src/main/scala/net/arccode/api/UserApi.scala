@@ -39,7 +39,7 @@ trait UserApi extends Directives with JsonSupport with ApplicationModule {
                       message = "业务执行成功",
                       response = classOf[SignUpResponse]),
       new ApiResponse(code = 400, message = "参数错误"),
-      new ApiResponse(code = 409, message = "手机号已被注册"),
+      new ApiResponse(code = 409, message = "手机号已被注册")
     ))
   def signUp =
     extractLog { log ⇒
